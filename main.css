@@ -52,6 +52,8 @@ a {
     text-decoration: none;
 }
 a:hover {color:#fff;}
+.text-link {text-decoration: underline;}
+.text-link:hover {color:#918f90;}
 
 ::selection {background: #999;}
 ::-moz-selection {background: #999;}
@@ -69,6 +71,7 @@ a:hover {color:#fff;}
 .cooper {
     font-family: Cooper Std, Neuzeit Grotesk, Futura, Helvetica, Arial, sans-serif;
     letter-spacing: 0.01em;
+    line-height: 1.2;
 }
 .letter {
     font-family: Letter Gothic Std, monospace;
@@ -117,6 +120,7 @@ LAYOUT
 .two-col:last-child {padding-left:1.6em;}
 .showcase .two-col:first-child {padding-right:0.8em;}
 .showcase .two-col:last-child {padding-left:0.8em;}
+.showcase h4 {margin-bottom: 1.8em;}
 
 .three-col {padding:0 0.8em;flex:1;}
 .three-col:first-child {padding-left:0;}
@@ -130,8 +134,8 @@ LAYOUT
 }
 .intro h2 {margin-bottom:21.6em;}
 
-.showcase {
-    max-width: 1440px;
+.max-width {
+    max-width: 1680px;
     margin:0 auto;
 }
 .showcase h3 {
@@ -142,8 +146,8 @@ LAYOUT
     margin-right:0.6em;
 }
 .showcase img {width:100%;}
-
-
+#home-about p:nth-child(2) {margin-bottom:2.4em;}
+#home-work {margin-bottom:8em;}
 
 /** Floats **/
 
@@ -277,6 +281,12 @@ footer a:last-of-type {margin-right: 0;}
     background-repeat: no-repeat;
     background-position: center top;
     background-image: url("images/marble-bg.png");
+}
+#home-about {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url("images/marble-bg.png");
+    padding-top: 1.4em;
 }
 
 
