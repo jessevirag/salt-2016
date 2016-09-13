@@ -8,136 +8,147 @@
         <meta name="description" content="SALT TESTING.">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="responsive.css">
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <style>
+          [data-sr] {
+            visibility: hidden;
+          }
+        </style>
     </head>
     <body>
         
         
         
         
-        
-        
-
-        <div class="wrapper full-bg">
+        <div>
+            <ul class="container bold navigation" id="nav">
+                <li class="flex-item logo"><img src="images/salt_logo.png" data-sr="scale 0 move 0 over 2s"></li>
+                <li class="flex-item" data-sr="enter left move 100px over 2s scale 0">
+                    <a href="#blank" class="fade-color" data-sr="wait 0.5s scale 0 move 0">Work</a>
+                    <a href="#blank" class="fade-color" data-sr="scale 0 move 0">About</a>
+                </li>
+                <li class="flex-item" data-sr="enter right move 100px over 2s scale 0">
+                    <a href="#blank" class="fade-color" data-sr="scale 0 move 0">Contact</a>
+                    <a href="#blank" class="fade-color instagram ig-handle" data-sr="wait 0.5s move 0 scale 0">@just_addsalt</a>
+                </li>
+            </ul>
+        </div>   
             
             
             
             
-            
-            
+            <div class="wrapper max-bg">
             <div id="mobile-nav" class="bold">
                 <img src="images/salt_logo.png">
                 <div>
-                    <a href="#blank" class="fade-all">Work</a>
-                    <a href="#blank" class="fade-all">About</a>
-                    <a href="#blank" class="fade-all">Contact</a>
+                    <a href="#blank" class="fade-color">Work</a>
+                    <a href="#blank" class="fade-color">About</a>
+                    <a href="#blank" class="fade-color">Contact</a>
                     <a href="mailto:jesse@justaddsalt.ca"><img src="images/linkedin-icon.png" style="width:20px;display:inline-block;top:12px;"></a>
                 </div>
             </div>
-            <ul class="container bold navigation" id="nav">
-                <li class="flex-item logo"><img src="images/salt_logo.png"></li>
-                <li class="flex-item">
-                    <a href="#blank" class="fade-all">Work</a>
-                    <a href="#blank" class="fade-all">About</a>
-                </li>
-                <li class="flex-item">
-                    <a href="#blank" class="fade-all">Contact</a>
-                    <a href="#blank" class="fade-all instagram ig-handle">@just_addsalt</a>
-                </li>
-            </ul>
             
             
             
             
             
             
-            <div class="intro">
-                <h1 class="cooper alpha bold centered">We are a creative team from Ottawa that helps businesses share their stories through design. We love <span class="yellow">ideas that taste good.</span></h1>
-                <h2 class="delta bold centered uppercase">See our work below</h2>
+            
+            <div class="intro" >
+                <h1 data-sr="move 50px over 3s wait 1s" class="cooper alpha bold centered">We are a creative team from Ottawa that helps businesses share their stories through design. We love <span class="yellow" >ideas that taste good.</span></h1>
+                <h2 data-sr="move 75px over 2.5s wait 1.5s" class="delta bold centered uppercase">See our work below</h2>
             </div>
             <div id="home-work">
+                
+                
+                
+                
+                
+                
                 <div class="container main max-width">
-                    <div class="flex-item two-col">
-                        <img src="images/portfolio/letsmatcha-1.jpg">
-                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey">|</span><h4 class="delta letter bold inline grey">Art direction, branding, packaging.</h4>
+                    <div class="flex-item two-col" data-sr>
+                        <div style="position:relative;" class="portfolio-box">
+                            <div>
+                                <h3 class="charlie bold">Let's Matcha</h3><h4 class="delta letter bold grey">Art direction, branding, packaging.</h4>
+                            </div>
+                            <img src="images/portfolio/letsmatcha-1.jpg" class="fade-all">
+                        </div>
+                        
                     </div>
-                    <div class="flex-item two-col">
+                    <div class="flex-item two-col" data-sr="wait 0.25s">
                         <img src="images/portfolio/letsmatcha-1.jpg">
-                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey">|</span><h4 class="delta letter  bold inline grey">Art direction, branding, packaging.</h4>
                     </div>
                 </div>
+                
+                
+                
+                
+                
+                
+                
                 <div class="container main max-width">
-                    <div class="flex-item two-col">
+                    <div class="flex-item two-col" data-sr>
                         <img src="images/portfolio/letsmatcha-1.jpg">
-                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey">|</span><h4 class="delta letter bold inline grey">Art direction, branding, packaging.</h4>
+                        <h3 class="brandname charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey separator">|</span><h4 class="delta letter bold inline grey">Art direction, branding, packaging.</h4>
                     </div>
-                    <div class="flex-item two-col">
+                    <div class="flex-item two-col" data-sr="wait 0.25s">
                         <img src="images/portfolio/letsmatcha-1.jpg">
-                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey">|</span><h4 class="delta letter  bold inline grey">Art direction, branding, packaging.</h4>
-                    </div>
-                </div>
-                <div class="container main max-width">
-                    <div class="flex-item two-col">
-                        <img src="images/portfolio/letsmatcha-1.jpg">
-                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey">|</span><h4 class="delta letter bold inline grey">Art direction, branding, packaging.</h4>
-                    </div>
-                    <div class="flex-item two-col">
-                        <img src="images/portfolio/letsmatcha-1.jpg">
-                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey">|</span><h4 class="delta letter  bold inline grey">Art direction, branding, packaging.</h4>
-                    </div>
-                </div>
-                <div class="container main max-width">
-                    <div class="flex-item two-col">
-                        <img src="images/portfolio/letsmatcha-1.jpg">
-                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey">|</span><h4 class="delta letter bold inline grey">Art direction, branding, packaging.</h4>
-                    </div>
-                    <div class="flex-item two-col">
-                        <img src="images/portfolio/letsmatcha-1.jpg">
-                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey">|</span><h4 class="delta letter  bold inline grey">Art direction, branding, packaging.</h4>
+                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey separator">|</span><h4 class="delta letter bold inline grey">Art direction, branding, packaging.</h4>
                     </div>
                 </div>
                 <div class="container main max-width">
-                <div class="flex-item two-col">
-                    <img src="images/portfolio/letsmatcha-1.jpg">
-                    <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey">|</span><h4 class="delta letter bold inline grey">Art direction, branding, packaging.</h4>
+                    <div class="flex-item two-col" data-sr>
+                        <img src="images/portfolio/letsmatcha-1.jpg">
+                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey separator">|</span><h4 class="delta letter bold inline grey">Art direction, branding, packaging.</h4>
+                    </div>
+                    <div class="flex-item two-col" data-sr="wait 0.25s">
+                        <img src="images/portfolio/letsmatcha-1.jpg">
+                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey separator">|</span><h4 class="delta letter  bold inline grey">Art direction, branding, packaging.</h4>
+                    </div>
                 </div>
-                <div class="flex-item two-col">
-                    <img src="images/portfolio/letsmatcha-1.jpg">
-                    <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey">|</span><h4 class="delta letter  bold inline grey">Art direction, branding, packaging.</h4>
+                <div class="container main max-width">
+                    <div class="flex-item two-col" data-sr>
+                        <img src="images/portfolio/letsmatcha-1.jpg">
+                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey separator">|</span><h4 class="delta letter bold inline grey">Art direction, branding, packaging.</h4>
+                    </div>
+                    <div class="flex-item two-col" data-sr="wait 0.25s">
+                        <img src="images/portfolio/letsmatcha-1.jpg">
+                        <h3 class="charlie bold inline">Let's Matcha</h3><span class="charlie letter darkgrey separator">|</span><h4 class="delta letter  bold inline grey">Art direction, branding, packaging.</h4>
+                    </div>
                 </div>
-            </div>
             </div>
             
-            <div class="max-width" id="home-about">
+            <div class="max-width" id="home-about" >
                 <div class="container main">
                     <div class="flex-item two-col">
-                        <p class="charlie cooper"><em>Salt</em> is a branding studio based in Ottawa, Canada’s capital. We create identities; brands that are clear, authentic, simple, and connect with your audience.</p>
-                        <p class="delta letter bold">We work on a range of media. We like to get our hands dirty and learn new things. Each project is a chance to explore and collaborate: between us, and with you. Have an idea for a project? Let's meet. The first coffee is always on us.
+                        <p class="charlie cooper" data-sr="enter bottom move 50px over 2s scale 0"><em>Salt</em> is a branding studio based in Ottawa, Canada’s capital. We create identities; brands that are clear, authentic, simple, and connect with your audience.</p>
+                        <p class="delta letter bold" data-sr="enter bottom move 60px over 2s wait 0.15s scale 0">We work on a range of media. We like to get our hands dirty and learn new things. Each project is a chance to explore and collaborate: between us, and with you. Have an idea for a project? Let's meet. The first coffee is always on us.
                         </p>
-                        <h2 class="charlie bold yellow">Hire Us</h2>
-                        <p class="delta letter bold"><a href="#blank" class="text-link fade-all">(613) 700-8787</a><br><a href="#blank" class="text-link fade-all">hello@justaddsalt.ca</a><br>179 Murray St. Studio J<br>Ottawa, ON K1N 5M7</p>
+                        <h2 class="charlie bold yellow" data-sr="enter bottom move 70px over 2s wait 0.2s scale 0">Hire Us</h2>
+                        <p class="delta letter bold" data-sr="enter bottom move 80px over 2s wait 0.25s scale 0"><a href="#blank" class="text-link fade-color">(613) 700-8787</a><br><a href="#blank" class="text-link fade-color">hello@justaddsalt.ca</a><br>179 Murray St. Studio J<br>Ottawa, ON K1N 5M7</p>
                         
                     </div>
                     <div class="flex-item two-col">
-                        <h2 class="charlie bold yellow">Services</h2>
+                        <h2 class="charlie bold yellow" data-sr="enter bottom move 50px over 2s scale 0">Services</h2>
                         <div class="container letter bold">
-                            <div class="flex-item two-col">
+                            <div class="flex-item two-col list">
                                 <ul>
-                                    <li>Art Direction</li>
-                                    <li>Logo Design &amp; Branding</li>
-                                    <li>Web Design</li>
-                                    <li>Advertising</li>
-                                    <li>Illustration</li>
-                                    <li>Motion Design &amp; Animation</li>
+                                    <li data-sr="enter bottom move 55px over 2s scale 0">Art Direction</li>
+                                    <li data-sr="enter bottom move 60px over 2s wait 0.15s scale 0">Logo Design &amp; Branding</li>
+                                    <li data-sr="enter bottom move 65px over 2s wait 0.3s scale 0">Web Design</li>
+                                    <li data-sr="enter bottom move 70px over 2s wait 0.45s scale 0">Advertising</li>
+                                    <li data-sr="enter bottom move 75px over 2s wait 0.6s scale 0">Illustration</li>
+                                    <li data-sr="enter bottom move 80px over 2s wait 0.75s scale 0">Motion Design &amp; Animation</li>
                                 </ul>
                             </div>
-                            <div class="flex-item two-col">
+                            <div class="flex-item two-col" data-sr="enter bottom move 50px;">
                                 <ul>
-                                    <li>Packaging</li>
-                                    <li>UI/UX</li>
-                                    <li>Photography</li>
-                                    <li>Signage</li>
-                                    <li>Book Design</li>
-                                    <li>Newsletters</li>
+                                    <li data-sr="enter bottom move 55px over 2s scale 0">Packaging</li>
+                                    <li data-sr="enter bottom move 60px over 2s wait 0.15s scale 0">UI/UX</li>
+                                    <li data-sr="enter bottom move 65px over 2s wait 0.3s scale 0">Photography</li>
+                                    <li data-sr="enter bottom move 70px over 2s wait 0.45s scale 0">Signage</li>
+                                    <li data-sr="enter bottom move 75px over 2s wait 0.6s scale 0">Book Design</li>
+                                    <li data-sr="enter bottom move 80px over 2s wait 0.75s scale 0">Newsletters</li>
                                 </ul>
                             </div>
                         </div>
@@ -171,19 +182,19 @@
             <div class="wrapper">
                 <div class="footer-col"><img src="images/salt_logo.png" class="logo"></div>
                 <div class="footer-col bold darkgrey delta">
-                    <a href="#blank" class="grey fade-all">Work</a>
-                    <a href="#blank" class="grey fade-all">About Us</a>
-                    <a href="#blank" class="grey fade-all">Contact</a>
+                    <a href="#blank" class="grey fade-color">Work</a>
+                    <a href="#blank" class="grey fade-color">About Us</a>
+                    <a href="#blank" class="grey fade-color">Contact</a>
                     <br>
                     <span class="letter delta">&copy; 2016 Just Add Salt Communications.</span>
                 </div>
                 <div class="footer-col bold darkgrey delta">
-                    <a href="tel:6137008787" class="grey fade-all">(613) 700-8787</a><span>|</span><a href="mailto:hello@justaddsalt.ca" class="grey fade-all">hello@justaddsalt.ca</a>
+                    <a href="tel:6137008787" class="grey fade-color">(613) 700-8787</a><span>|</span><a href="mailto:hello@justaddsalt.ca" class="grey fade-color">hello@justaddsalt.ca</a>
                     <br>
                     <span class="letter delta">179 Murray St, Studio J. Ottawa, ON K1N 5M7</span>
                 </div>
                 <div class="float-right">
-                    <a href="https://www.linkedin.com/in/jessevirag" class="instagram ig-handle bold fade-all">@just_addsalt</a>
+                    <a href="https://www.linkedin.com/in/jessevirag" class="instagram ig-handle bold fade-color">@just_addsalt</a>
                 </div>
             </div>
         <footer>
@@ -201,6 +212,11 @@
         
         
         
-        
+       <script src="js/scrollReveal.js"></script>
+    <script>
+
+      window.sr = new scrollReveal();
+
+    </script>
     </body>
 </html>

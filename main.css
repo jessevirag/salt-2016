@@ -1,3 +1,6 @@
+
+
+
 * {
     margin:0;
     padding:0;
@@ -21,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     font-family: Neuzeit Grotesk, Futura, Helvetica, Arial, sans-serif;
     font-weight: 400;
-    margin-bottom: 0.8em;
+    margin-bottom: 1.6rem;
 }
 h1 {margin-bottom: 3.2em;}
 
@@ -125,14 +128,14 @@ LAYOUT
 .three-col {padding:0 0.8em;flex:1;}
 .three-col:first-child {padding-left:0;}
 .three-col:last-child {padding-right:0;}
-.wrapper {padding:3.2em;}
+.wrapper {padding:3.2em; max-width:1680px;margin:0 auto;}
 
 
 .intro h1 {
     max-width:800px;
-    margin:5.4em auto 2.4em;
+    margin:5.4em auto 5.4rem;
 }
-.intro h2 {margin-bottom:21.6em;}
+.intro h2 {margin-bottom:8.1rem;}
 
 .max-width {
     max-width: 1680px;
@@ -142,10 +145,8 @@ LAYOUT
     margin-right:0.6em;
     margin-bottom: 0;
 }
-.showcase span {
-    margin-right:0.6em;
-}
 .showcase img {width:100%;}
+.separator {margin:0 0.4em;}
 #home-about p:nth-child(2) {margin-bottom:2.4em;}
 #home-work {margin-bottom:8em;}
 
@@ -159,6 +160,11 @@ LAYOUT
 .navigation {
     flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
+    overflow: hidden;
+    position:absolute;
+    width:100%;
+    padding:3.2em 0;
+    box-sizing:border-box;
 }
 
 #nav .flex-item {
@@ -194,10 +200,14 @@ LAYOUT
 
 #mobile-nav *:last-child{margin-right:0;}
 #nav li:first-child {order:2;}
-#nav li:nth-child(2) {order:1;}
+#nav li:nth-child(2) {
+    order:1;
+    margin-left:3.2em;
+}
 #nav li:last-child {
     order:3;
     text-align: right;
+    margin-right:3.2em;
 }
 #nav * {margin-bottom: 0;}
 #nav {margin-bottom: 4em;}
@@ -210,6 +220,50 @@ LAYOUT
     width:110px;
 }
 
+
+.portfolio-box {
+    position:relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    margin-bottom:3.2em;
+}
+.portfolio-box div {
+    background:#231f20;
+    width:100%;
+    height:100%;
+    position:absolute;
+    padding:3.2rem 3.2rem 3.2rem 0;
+    box-sizing:border-box;
+    overflow: hidden;
+}
+
+.portfolio-box img {
+    margin: 0;
+    padding: 0;
+}
+.portfolio-box h3, .portfolio-box h4 {
+    margin-bottom: 0;
+    opacity: 0;
+}
+.portfolio-box div h3 {z-index:999; margin-left:0;}
+.portfolio-box div h4 {z-index:999; margin-left:3.2rem; margin-top:3.2rem;}
+.portfolio-box:hover img {
+    opacity:0.2;
+}
+.portfolio-box:hover h3{
+    margin-left:3.2rem;
+    opacity:1;
+    transition: all 0.5s ease-in-out;
+}
+.portfolio-box:hover h4 {
+    margin-top:0;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.25s;
+}
+.portfolio-box:hover h4 {
+    transition-delay: 0.1s;
+}
 
 
 /** Footer **/
@@ -282,11 +336,15 @@ footer a:last-of-type {margin-right: 0;}
     background-position: center top;
     background-image: url("images/marble-bg.png");
 }
-#home-about {
+.max-bg {
     background-repeat: no-repeat;
     background-position: center top;
-    background-image: url("images/marble-bg.png");
+    background-image: url("images/full-bg.jpg");
+    background-attachment: fixed;
+}
+#home-about { 
     padding-top: 1.4em;
+    padding-bottom: 4.2em;
 }
 
 
@@ -315,9 +373,9 @@ footer a:last-of-type {margin-right: 0;}
 
 
 /** ANIMATION **/
-
-.fade-all {transition: color .15s ease-in;}
-.fade-opacity {
+.fade-all {transition: all .15s ease-in;}
+.fade-color {transition: color .15s ease-in;}
+.fade-opacity-in {
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
